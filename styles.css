@@ -4,7 +4,7 @@
     --nav-button-bg: #2c3e50;
     --hover-accent: #2980b9;
     --text-primary: rgba(255,255,255,0.9);
-    --logo-size: 500px;
+    --logo-size: 40px;
     --header-height: 90px;
     --header-padding: 80px;
     --container-width: 2300px;
@@ -486,7 +486,7 @@ body {
 .contact-info h1 {
     color: #3498db;
     margin-bottom: 40px;
-    font-size: 2.5em;
+    font-size: 4em;
 }
 
 .contact-item {
@@ -497,7 +497,7 @@ body {
 }
 
 .contact-icon {
-    font-size: 1.8em;
+    font-size: 2.8em;
     width: 50px;
     text-align: center;
 }
@@ -921,7 +921,7 @@ button[type="submit"] {
 
 /* Эффект при наведении на изображение */
 .gallery img:hover {
-    transform: scale(2); /* Увеличение при наведении */
+    transform: scale(1.1); /* Увеличение при наведении */
 }
 
 /* Стили для полосы прокрутки (опционально) */
@@ -959,3 +959,96 @@ button[type="submit"] {
         width: 200px; /* Еще меньше для маленьких экранов */
     }
 }
+.footer {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 40px 0 20px;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-links li,
+.footer-contacts li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer-links a,
+.footer-contacts a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-contacts a:hover {
+    color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+}
+
+.social-links a {
+    color: #cccccc;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #444444;
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+    color: #aaaaaa;
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+/* Иконочный шрифт */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');

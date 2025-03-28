@@ -10,7 +10,7 @@
     <header class="header">
             <div class="header-left">
                 <a href="index.html" class="logo-link">
-                    <img src="images/yes_logo.png" alt="Логотип TechSolutions" class="logo">
+                    <img src="images/yes_logo_new.png" alt="Логотип TechSolutions" class="logo">
                 </a>
             </div>
 
@@ -30,7 +30,7 @@
                 <h1>Наши контакты</h1>
                 <div class="contact-item">
                     <div class="contact-icon">📍</div>
-                    <p>г. Москва, ул. Тверская, д. 12<br>Бизнес-центр "Современник", офис 405</p>
+                    <p>г. Москва, Каширское шоссе, д.31, стр. 44<br>НИЯУ МИФИ</p>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📞</div>
@@ -39,26 +39,27 @@
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📧</div>
-                    <p><a href="mailto:info@techsolutions.ru">info@techsolutions.ru</a><br>
-                    <a href="mailto:support@techsolutions.ru">support@techsolutions.ru</a></p>
+                    <p><a href="mailto:info@techsolutions.ru">info@yes.ru</a><br>
+                    <a href="mailto:support@techsolutions.ru">support@yes.ru</a></p>
                 </div>
             </div>
 
             <div class="map-container">
                 <iframe 
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae08d..." 
+                    src="https://yandex.ru/map-widget/v1/?ll=37.667621%2C55.648828&mode=whatshere&whatshere%5Bpoint%5D=37.668747%2C55.649371&whatshere%5Bzoom%5D=17&z=18.46" 
                     frameborder="0"
                     allowfullscreen
                     aria-hidden="false"
                     tabindex="0">
                 </iframe>
             </div>
+            
         </div>
 
         <!-- Форма обратной связи -->
         <section class="contact-form">
             <h2>Напишите нам</h2>
-            <form class="feedback-form">
+            <form class="feedback-form" id="contact-form">
                 <div class="form-row">
                     <div class="form-group">
                         <input type="text" placeholder="Ваше имя" required>
@@ -74,7 +75,41 @@
             </form>
         </section>
     </main>
-
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>О нас</h4>
+                <ul class="footer-links">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <ul class="footer-contacts">
+                    <li><i class="fas fa-map-marker-alt"></i> г. Москва, Каширское шоссе, д.31, стр. 44</li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@example.com">info@yes.ru</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Соцсети</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 ЦИРК. Все права защищены.</p>
+            <!--<p><a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a></p>--><!-- Блок 2 -->
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
