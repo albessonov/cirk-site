@@ -4,7 +4,7 @@
     --nav-button-bg: #2c3e50;
     --hover-accent: #2980b9;
     --text-primary: rgba(255,255,255,0.9);
-    --logo-size: 40px;
+    --logo-size: 500px;
     --header-height: 90px;
     --header-padding: 80px;
     --container-width: 2300px;
@@ -845,25 +845,6 @@ button[type="submit"] {
     font-size: 1.5em;
 }
 
-/* Кнопка "Все проекты" */
-.nav-button {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 15px 40px;
-    background: var(--nav-button-bg); /* #2c3e50 из :root */
-    color: var(--header-text); /* #ffffff из :root */
-    text-decoration: none;
-    border-radius: 10px;
-    transition: all 0.3s;
-    font-size: 1.1em;
-    font-weight: 500;
-}
-
-.nav-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    background: var(--hover-accent); /* #2980b9 из :root */
-}
 
 /* Адаптивность */
 @media (max-width: 1200px) {
