@@ -745,3 +745,236 @@ button[type="submit"] {
 
 .project-card:nth-child(odd) { animation-delay: 0.2s; }
 .project-card:nth-child(even) { animation-delay: 0.4s; }
+
+.project-details {
+    max-width: var(--container-width); /* 2300px из :root */
+    margin: 50px auto;
+    padding: 0 50px;
+    animation: fadeIn 0.8s ease-out; /* Анимация появления */
+}
+
+.project-details h1 {
+    font-size: 2.8em;
+    color: #3498db; /* Синий акцент из общей схемы */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Блок с изображением и статистикой */
+.project-header {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.project-header img {
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3); /* Тень как у других изображений */
+}
+
+.project-stats {
+    width: 40%;
+    background: rgba(255,255,255,0.05); /* Полупрозрачный фон как в text-side */
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px); /* Эффект размытия как в других блоках */
+}
+
+.project-stats li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.stat-label {
+    color: #3498db; /* Синий для меток */
+}
+
+.stat-value {
+    color: var(--text-primary); /* Основной цвет текста из :root */
+}
+
+/* Блок с описанием проекта */
+.project-content {
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.project-content h2 {
+    font-size: 2.2em;
+    color: #3498db;
+    margin-bottom: 30px;
+}
+
+.project-content p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.project-content h3 {
+    font-size: 1.8em;
+    color: #3498db;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.project-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.project-content ul li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.project-content ul li::before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+}
+
+/* Кнопка "Все проекты" */
+.nav-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 40px;
+    background: var(--nav-button-bg); /* #2c3e50 из :root */
+    color: var(--header-text); /* #ffffff из :root */
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    background: var(--hover-accent); /* #2980b9 из :root */
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .project-header {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .project-header img {
+        width: 100%;
+    }
+    
+    .project-stats {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-details {
+        padding: 0 20px;
+    }
+    
+    .project-content {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-details h1 {
+        font-size: 2.2em;
+    }
+    
+    .project-content h2 {
+        font-size: 1.8em;
+    }
+    
+    .project-content p {
+        font-size: 1em;
+    }
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.gallery-container {
+    width: 60%; /* Соответствует ширине оригинального изображения */
+    overflow-x: auto; /* Горизонтальная прокрутка */
+    white-space: nowrap; /* Изображения в одну линию */
+    padding-bottom: 10px; /* Отступ для полосы прокрутки */
+}
+
+/* Внутренний контейнер для изображений */
+.gallery {
+    display: inline-flex; /* Выстраиваем изображения в линию */
+    gap: 20px; /* Расстояние между изображениями */
+}
+
+/* Стили для изображений */
+.gallery img {
+    width: 300px; /* Фиксированная ширина изображений */
+    height: auto; /* Сохраняем пропорции */
+    border-radius: 20px; /* Скругленные углы */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3); /* Тень для объема */
+    transition: transform 0.3s ease; /* Плавное увеличение при наведении */
+}
+
+/* Эффект при наведении на изображение */
+.gallery img:hover {
+    transform: scale(2); /* Увеличение при наведении */
+}
+
+/* Стили для полосы прокрутки (опционально) */
+.gallery-container::-webkit-scrollbar {
+    height: 8px; /* Высота полосы прокрутки */
+}
+
+.gallery-container::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1); /* Фон полосы */
+    border-radius: 10px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+    background: #3498db; /* Цвет ползунка */
+    border-radius: 10px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb:hover {
+    background: #2980b9; /* Цвет ползунка при наведении */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 1200px) {
+    .gallery-container {
+        width: 100%; /* Полная ширина на меньших экранах */
+    }
+    
+    .gallery img {
+        width: 250px; /* Уменьшаем изображения */
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: 200px; /* Еще меньше для маленьких экранов */
+    }
+}
