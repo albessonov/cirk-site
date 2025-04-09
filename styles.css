@@ -162,6 +162,7 @@ body {
 }
 
 .content-wrapper {
+    font-family: Gilroy, sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -555,7 +556,8 @@ body {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 15px;
+    height: 140%;
+    padding: 13x;
     border: 2px solid #3498db;
     border-radius: 10px;
     background: rgba(255,255,255,0.1);
@@ -576,7 +578,7 @@ body {
 }
 
 button[type="submit"] {
-    width: 100%;
+    width: 101%;
     padding: 18px;
     font-size: 1.1em;
     margin-top: 20px;
@@ -1049,6 +1051,64 @@ button[type="submit"] {
         flex-direction: column;
     }
 }
+/* Контейнер для вакансий */
+.vacancy-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
 
+.vacancy-card {
+    background-color: rgb(127, 153, 194);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.vacancy-title {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.location {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.location i {
+    margin-right: 5px;
+}
+
+.requirements-list {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.apply-button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+    background-color: #002244;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .vacancy-container {
+        padding: 15px;
+    }
+    
+    .vacancy-card {
+        padding: 15px;
+    }
+}
 /* Иконочный шрифт */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
